@@ -1,0 +1,68 @@
+Write a program to display all the Prime Numbers between a given range of numbers.
+
+Input Format
+
+Line 1: Line 2:
+
+Constraints
+
+1<=n<=10^7
+
+Output Format
+
+Sample Input 0
+
+25
+50
+Sample Output 0
+
+29 31 37 41 43 47
+Sample Input 1
+
+100
+200
+Sample Output 1
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int a,b;
+        Scanner s=new Scanner(System.in);
+        a=s.nextInt();
+        b=s.nextInt();
+        int i=a;
+         
+        while(i<=b){
+
+        int c=0;
+
+        for(int j=2;j<i;j++){
+
+        if(i%j==0){
+
+            c++;
+
+        }
+
+        }
+
+        if(c==0){
+
+        System.out.printf("%d ",i);
+        }
+
+        
+
+        i++;
+
+    }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
+
+
+101 103 107 109 113 127 131 137 139 149 151 157 163 167 173 179 181 191 193 197 199
